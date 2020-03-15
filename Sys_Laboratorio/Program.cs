@@ -44,7 +44,7 @@ namespace Sys_Laboratorio
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                //MessageBox.Show(ex.ToString());
             }
             return ok;
         }
