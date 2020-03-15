@@ -55,6 +55,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.cmsExamenes.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -158,6 +161,7 @@
             this.lstPacientes.ContextMenuStrip = this.cmsExamenes;
             this.lstPacientes.FullRowSelect = true;
             this.lstPacientes.GridLines = true;
+            this.lstPacientes.HideSelection = false;
             this.lstPacientes.Location = new System.Drawing.Point(37, 154);
             this.lstPacientes.Name = "lstPacientes";
             this.lstPacientes.Size = new System.Drawing.Size(664, 305);
@@ -191,12 +195,12 @@
             this.cmsExamenes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.examenesToolStripMenuItem});
             this.cmsExamenes.Name = "cmsExamenes";
-            this.cmsExamenes.Size = new System.Drawing.Size(127, 26);
+            this.cmsExamenes.Size = new System.Drawing.Size(128, 26);
             // 
             // examenesToolStripMenuItem
             // 
             this.examenesToolStripMenuItem.Name = "examenesToolStripMenuItem";
-            this.examenesToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.examenesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.examenesToolStripMenuItem.Text = "Examenes";
             this.examenesToolStripMenuItem.Click += new System.EventHandler(this.examenesToolStripMenuItem_Click);
             // 
@@ -279,11 +283,47 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombres:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.label3.Location = new System.Drawing.Point(707, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "(Hacer click derecho para mostrar";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.label4.Location = new System.Drawing.Point(707, 195);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(161, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "los examenes del paciente)";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.label5.Location = new System.Drawing.Point(708, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 15);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "NOTA:";
+            // 
             // frmAtencion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 496);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lstPacientes);
@@ -335,6 +375,9 @@
         private System.Windows.Forms.ContextMenuStrip cmsExamenes;
         private System.Windows.Forms.ToolStripMenuItem examenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem respaldoDeBaseDeDatosToolStripMenuItem;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

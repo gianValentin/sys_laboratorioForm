@@ -60,5 +60,17 @@ namespace Sys_Laboratorio
             }
             return verifica;
         }
+
+        private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+                btnIngrsar_Click(null,null);
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+                btnIngrsar_Click(null, null);
+        }
     }
 }
